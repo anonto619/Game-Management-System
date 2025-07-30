@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Add Game</title>
+</head>
+<body>
+    <h2>Add a New Game</h2>
+    <form action="add_game.php" method="POST">
+        <label>Title:</label><br />
+        <input type="text" name="title" required /><br /><br />
+
+        <label>Genre:</label><br />
+        <input type="text" name="genre" /><br /><br />
+
+        <label>Platform:</label><br />
+        <input type="text" name="platform" /><br /><br />
+
+        <label>Release Year:</label><br />
+        <input type="number" name="release_year" min="1970" max="2100" /><br /><br />
+
+        <input type="submit" value="Add Game" />
+    </form>
+
+    <br />
+    <a href="view_games.php">View All Games</a>
+</body>
+</html>
